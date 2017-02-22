@@ -1,0 +1,106 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>1</title>
+	<style>
+		ul,li {
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		audio {
+		border: 1px solid blue;
+		}
+		.container {
+			box-sizing: border-box;
+			width: 535px;
+			height: 330px;
+			
+			border: 2px solid #333;
+			border-radius: 10px;
+		}
+		.head {
+			box-sizing: border-box;
+			font-size: 0;
+			height: 60px;
+			padding-top: 20px;
+			padding-left: 25px;
+			background: #05a29f;
+		}
+		.head-button {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			border-radius: 100%;
+			background:-webkit-radial-gradient(circle,#00c785,#03b3ab,#309692,#0f8681);
+			box-shadow: 0px 0px 0px 1px #0f8681;
+		}
+		.music-list {
+			top: 0px;
+			left: 25px;
+			padding-top: 20px;
+			padding-left: 25px;
+			cursor: pointer;
+		}
+		.list-display {
+			width: 40px;
+			height: 3px;
+			background: #666;
+			margin-bottom: 3px;
+			border-radius: 3px;
+		}
+		.list-details {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="head">
+			<a href="##" class="head-button head-small"></a>
+			<a href="##" class="head-button head-large"></a>
+			<a href="##" class="head-button head-cancel"></a> 
+	    </div>
+		<div class="music-list">
+			<div class="list-display"></div>
+			<div class="list-display"></div>
+			<div class="list-display"></div>
+			<div class="list-display"></div>
+			<ul class="list-details">
+				<li><a href="##">1</a></li>
+				<li><a href="##">2</a></li>
+				<li><a href="##">3</a></li>
+				<li><a href="##">4</a></li>
+				<li><a href="##">5</a></li>
+				<li><a href="##">6</a></li>
+				<li><a href="##">7</a></li>
+			</ul>
+		</div>
+		<div class="">
+			
+		</div>
+	<audio src="xxy1.mp3" controls>
+		Your browser does not support the audio element.
+	</audio>
+		<p>1</p>
+	</div>
+	
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<script>
+	var $musicList=$(".music-list"),
+	$listDisplay=$(".list-display"),
+	$listDetails=$(".list-details");
+	$musicList.on('click',function(){
+		$listDetails.toggle();
+	})
+</script>
+</body>
+</html>
